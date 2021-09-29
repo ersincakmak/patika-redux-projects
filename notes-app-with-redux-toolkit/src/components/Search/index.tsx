@@ -9,14 +9,10 @@ const Search = (props: Props) => {
 
   const [filterKey, setfilterKey] = useState("");
 
-  const handleFilter = () => {
+  useEffect(() => {
     dispatch(setFilteredData(filterKey.trim()));
     dispatch(setFilterValue(filterKey.trim()));
-  };
-
-  useEffect(() => {
-    handleFilter();
-  }, [filterKey]);
+  }, [filterKey, dispatch]);
 
   return (
     <div className="flex justify-center">
