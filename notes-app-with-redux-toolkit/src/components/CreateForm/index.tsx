@@ -33,7 +33,17 @@ const CreateForm = () => {
           </div>
 
           <button
-            className={`px-4 py-1.5 rounded text-gray-50 font-semibold border-none outline-none bg-${selectedColor} transition`}
+            className={`px-4 py-1.5 rounded text-gray-50 font-semibold border-none outline-none ${
+              selectedColor === "blue"
+                ? "bg-blue"
+                : selectedColor === "green"
+                ? "bg-green"
+                : selectedColor === "pink"
+                ? "bg-pink"
+                : selectedColor === "purple"
+                ? "bg-purple"
+                : selectedColor === "yellow" && "bg-yellow"
+            } transition`}
             onClick={() => {
               if (text.length) {
                 dispatch(addNote(text));

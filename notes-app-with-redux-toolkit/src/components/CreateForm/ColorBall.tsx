@@ -20,7 +20,17 @@ const ColorBall: React.FC<Props> = ({ color, name, value }) => {
 
   return (
     <label
-      className={`w-7 h-7 rounded-full flex items-center justify-center bg-${color} cursor-pointer`}
+      className={`w-7 h-7 rounded-full flex items-center justify-center ${
+        color === "blue"
+          ? "bg-blue"
+          : color === "green"
+          ? "bg-green"
+          : color === "pink"
+          ? "bg-pink"
+          : color === "purple"
+          ? "bg-purple"
+          : color === "yellow" && "bg-yellow"
+      } cursor-pointer`}
       onClick={handleChangeColor}
     >
       {selectedColor === color && <BsCheck className="text-xl text-gray-50" />}
