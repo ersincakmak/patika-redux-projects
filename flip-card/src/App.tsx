@@ -23,6 +23,7 @@ function App() {
         dispatch(checkCards());
       }, 1000);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected]);
 
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
     if (isEveryMatched) {
       dispatch(setGameEnd());
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   useEffect(() => {
