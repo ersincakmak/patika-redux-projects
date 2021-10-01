@@ -4,7 +4,7 @@ This project maded by using tailwind, tpyescript, redux-toolkit also  used confe
 
 # Demo 
 
----
+Demo [link](https://ersincakmak-flip-card.netlify.app/)
 
 # Installation
 
