@@ -1,6 +1,6 @@
 # Covid Tracker App
 
-Demo
+[Demo](https://ersincakmak-covid-tracker.netlify.app/)
 
 # Screenshots
 
