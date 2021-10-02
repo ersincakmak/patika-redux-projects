@@ -1,0 +1,16 @@
+.output {
+  flex: 1;
+  height: 100%;
+  border: 2px solid var(--border-color) !important;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  overflow: auto;
+
+  & * {
+    list-style-position: inside;
+  }
+}

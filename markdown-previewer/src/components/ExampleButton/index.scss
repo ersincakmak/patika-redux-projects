@@ -1,0 +1,26 @@
+.exampleButton {
+  align-self: flex-end;
+  background-color: var(--example-btn-bg);
+  color: var(--example-btn-color);
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  box-shadow: 0.5em 0.5em 0 0 var(--text-color);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    box-shadow: 0.25em 0.25em 0 0 var(--text-color);
+  }
+
+  &--active {
+    box-shadow: 0 0 0 0 var(--text-color);
+    &:hover {
+      box-shadow: 0 0 0 0 var(--text-color);
+    }
+  }
+}

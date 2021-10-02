@@ -1,0 +1,8 @@
+.previewer {
+  width: min(1200px, 95%);
+  align-self: center;
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  overflow: auto;
+}
