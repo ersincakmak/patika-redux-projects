@@ -18,6 +18,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchCountries());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
     } else {
       dispatch(fetchSingular(selected));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected]);
 
   return (
