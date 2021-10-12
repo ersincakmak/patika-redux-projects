@@ -8,7 +8,7 @@ If you want to try on your local, you need to be clone this project first. After
 
 # Demo
 
-[Demo link](empty)
+[Demo link](https://ersincakmak-type-speed-test.netlify.app/)
 
 # Screenshots 
 
