@@ -1,0 +1,17 @@
+:root {
+  --bg-color: #f8f5f5;
+  --bg-color-dark: #e4dede;
+  --text-color: #252525;
+  --border-color: #505050;
+  --button-bg-dark: #59708d;
+  --button-bg-light: #90aacb;
+}
+
+html.dark {
+  --bg-color: #082032;
+  --bg-color-dark: #334756;
+  --text-color: #c5c1c1;
+  --border-color: #bbb7b7;
+  --button-bg-dark: #283341;
+  --button-bg-light: #4a596d;
+}

@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  max-width: 50rem;
+  margin-inline: auto;
+  align-items: center;
+  margin-top: 1.875rem;
+  transition: all 0.2s ease;
+
+  @media screen and (max-width: 30rem) {
+    flex-wrap: wrap;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  &__input {
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    padding: 1rem;
+    flex: 1;
+    font-size: 16px;
+    color: var(--text-color);
+
+    &:disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--button-bg-light);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--button-bg-dark);
+    }
+
+    svg {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}

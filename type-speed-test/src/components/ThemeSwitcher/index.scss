@@ -1,0 +1,37 @@
+.swithcer {
+  width: 45px;
+  height: 15px;
+  background-color: rgb(128, 128, 128);
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+  display: block;
+
+  & > &__input:checked ~ &__icon {
+    left: 100%;
+    transform: translate(-75%, -50%);
+  }
+
+  &__icon {
+    position: absolute;
+    background-color: var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    color: var(--bg-color);
+    top: 50%;
+    left: 0;
+    transform: translate(-25%, -50%);
+    transition: all 0.2s ease;
+  }
+
+  &__input {
+    position: absolute;
+    display: none;
+    font-size: 20px;
+  }
+}

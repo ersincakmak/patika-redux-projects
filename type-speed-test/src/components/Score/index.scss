@@ -1,0 +1,43 @@
+.score {
+  width: 18.75rem;
+  border: 4px solid var(--border-color);
+  margin-top: 1.875rem;
+  margin-inline: auto;
+
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  h1 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__rightSide {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__min {
+    font-size: 0.875rem;
+    display: flex;
+    gap: 2px;
+  }
+
+  &__green {
+    color: green;
+  }
+
+  &__red {
+    color: red;
+  }
+}
