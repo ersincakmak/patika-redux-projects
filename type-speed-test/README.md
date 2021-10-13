@@ -1,6 +1,6 @@
 # Type Speed Test
 
-I have used [this api link](https://random-word-api.herokuapp.com/word?number=1000) for random words. That's generate 1000 words for us. You have 60 seconds for the type, you should type as you can. 
+I have used [this api link](https://random-word-api.herokuapp.com/word?number=1000) for random words. That's generate 1000 words for us. You have 60 seconds for the type, you should type fast as you can. 
 
 # Installation
 
